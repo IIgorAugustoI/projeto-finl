@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'icones';
+    src: url(../fonts/icones.ttf);
+}
+
+body {
+    font-family: 'Open Sans', 'icones', sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    background-color: #FF213E;
+    color: #FFFFFF;
+}
+
+.cabecalho__menu::before {
+    content: "\e904";
+    font-size: 24px;
+}
+
+.cabecalho h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cabecalho__logo {
+    width: 80px;
+}
+
+.menu-lateral {
+    display: flex;
+    flex-direction: column;
+    background-color: #FF213E;
+    width: 15vw;
+    height: 100%;
+    color: #FFFFFF;
+    position: absolute;
+    left: -100vw;
+    transition: .25s;
+}
+
+.menu-lateral--ativo {
+    left: 0;
+    transition: .25s;
+}
+
+.menu-lateral__link {
+    height: 50px;
+    padding-left: 50px;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu-lateral__link--ativo {
+    color: #FFFFFF;
+    padding-left: 20px;
+    border-left: 8px solid;
+}
+
+.menu-lateral__link::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 20px;
+    margin-top: 10px;
+}
+
+.menu-lateral__link--imc::before {
+    content: "\e903";
+    
+}
+
+.menu-lateral__link--compras::before {
+    content: "\e901";
+}
+
+.menu-lateral__link--agenda::before {
+    content: "\e90c";
+}
