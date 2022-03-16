@@ -82,3 +82,34 @@ body {
 .menu-lateral__link--agenda::before {
     content: "\e90c";
 }
+
+button {
+    width: 100px;
+    background-color: #fc1937;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 5px 25px;
+    margin: 10px 6em;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(1.2);
+}
+
+main {
+    margin-left: 200px;
+    padding: 10px;
+}
+
+table {
+    table-layout: fixed;
+    margin: 0px 8rem;
+}
+
+td, th, tr {
+    border: 2px solid #000000;
+    padding: 10px 30px;
+}

@@ -7,7 +7,7 @@
     <title>Projeto Final | DevsRampa</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/formulario-imc.css">
+    <link rel="stylesheet" href="assets/css/lista-compras.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -23,6 +23,44 @@
         <a href="lista-compras.html" class="menu-lateral__link menu-lateral__link--compras">Lista de Compras</a>
         <a href="#" class="menu-lateral__link menu-lateral__link--agenda">Agenda</a>
     </nav>
+    <main>
+        <h2 class="titulo-principal">Lista de compras:</h2>
+        <section class="formulario-lista-compras">  
+            <form class="formulario-compras">
+                <label for="item">Adicione o Produto:</label>
+                <input type="text" name="item" id="item" class="input-compras">
+        
+                <label for="qtd">Quantidade (UND):</label>
+                <input type="text" name="qtd" id="qtd" class="input-compras">
+        
+                <label for="valor">Preço:</label>
+                <input type="text" name="valor" id="valor" class="input-compras">
+            
+            </form>  
+        </section>
+
+        <section class="botoes">
+            <button class="botao-adicionar">Adicionar</button>
+            <button class="botao-deletar">Deletar</button>
+        </section>
+
+        <section class="tabela-lista-compras">
+            <table>
+                <thead>
+                    <tr class="cabecalho-tabela">
+                        <th>Nº</th>
+                        <th>ITEM</th>
+                        <th>QUANTIDADE</th>
+                        <th>PREÇO</th>
+                    </tr>
+                </thead>
+                <tbody class="corpo-tabela">
+                    <tr>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
     <script src="./assets/script/main.js"></script>
 </body>
 </html>
