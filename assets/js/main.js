@@ -5,11 +5,12 @@ botaoMenu.addEventListener('click', () => {
     menuLateral.classList.toggle('menu-lateral--ativo')
 });
 
-function limparCampos(){
-    let inputs = document.getElementsByTagName("input");
-    for(const i in inputs){
-        const limpar = inputs[i];
-        limpar.value = "";
-    }
-    document.getElementById("nome").focus();
-}
+var tabela = document.querySelector('.tabela-pacientes');
+
+tabela.addEventListener('dblclick', (event) => {
+
+    event.target.parentNode.classList.add('desaparecer');
+    setTimeout( () => {
+        event.target.parentNode.remove();
+    },500);
+});

@@ -104,7 +104,7 @@ main {
     padding: 10px;
 }
 
-table {
+.tabela-pessoa {
     table-layout: fixed;
     margin: 0px 8rem;
 }
@@ -112,4 +112,19 @@ table {
 td, th, tr {
     border: 2px solid #000000;
     padding: 10px 30px;
+}
+
+.celula {
+    background-color: #F3F3F3;
+}
+
+.desaparecer {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.mensagem-erro {
+    font-size: 12px;
+    margin-top: 15px;
+    color: red;
 }
