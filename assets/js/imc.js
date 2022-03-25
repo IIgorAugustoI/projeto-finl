@@ -46,8 +46,12 @@ function validarPessoa(formulario){
         erros.push('Nome não pode ser em branco');
     if (formulario.peso.value == 0)
         erros.push('Peso não pode ser em branco');
+    if (formulario.peso.value >= 200 || formulario.peso.value <= 0)
+        erros.push('Peso inválido');
     if(formulario.altura.value == 0)
         erros.push('Altura não pode ser em branco');
+    if(formulario.altura.value >= 3.0 || formulario.altura.value <= 0)
+        erros.push('Altura inválida');
     if(formulario.gordura.value == 0)
         erros.push('Gordura não pode ser em branco');
 
@@ -60,7 +64,6 @@ function calculaImc(peso, altura){
 
     return imc;
 }
-
 
 function adicionaPessoa(formulario){
 
